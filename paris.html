@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Paris with Travelgram. Find the best hotels, flight prices from New Delhi to Paris, and top tourist destinations in the City of Light.">
+    <title>Travelgram - Paris Travel Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #1b407f;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2em;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .prices, .places {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .prices div, .places div {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            text-align: center;
+        }
+
+        .prices div h3, .places div h3 {
+            margin-bottom: 10px;
+            color: #1b407f;
+        }
+
+        .prices div p, .places div p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        /* Flight Prices Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th, table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #1b407f;
+            color: white;
+        }
+
+        table td {
+            background-color: #f9f9f9;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .prices div, .places div {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travelgram - Your Guide to Paris</h1>
+        <p>Find the best hotels, flight prices, and explore the famous places in Paris!</p>
+    </header>
+
+    <section>
+        <h2>Hotel Room Prices in Paris</h2>
+        <img src="eiffel-tower-night-paris-france-reflection-river-thames-2880x1800-8437.jpg" width="800" height="500"
+        <div class="prices">
+            <div>
+                <h3>Luxury Hotels</h3>
+                <p>€300 - €600 per night</p>
+            </div>
+            <div>
+                <h3>Mid-Range Hotels</h3>
+                <p>€150 - €300 per night</p>
+            </div>
+            <div>
+                <h3>Budget Hotels</h3>
+                <p>€70 - €150 per night</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Flight Prices: New Delhi to Paris</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Airline</th>
+                    <th>Departure</th>
+                    <th>Arrival</th>
+                    <th>Price (Round Trip)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Air India</td>
+                    <td>New Delhi, 11:30 AM</td>
+                    <td>Paris, 7:00 PM</td>
+                    <td>€550</td>
+                </tr>
+                <tr>
+                    <td>Air France</td>
+                    <td>New Delhi, 2:30 AM</td>
+                    <td>Paris, 12:00 PM</td>
+                    <td>€600</td>
+                </tr>
+                <tr>
+                    <td>Qatar Airways</td>
+                    <td>New Delhi, 4:00 AM</td>
+                    <td>Paris, 10:30 AM</td>
+                    <td>€650</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Famous Places to Visit in Paris</h2>
+        <div class="places">
+            <div>
+                <h3>Eiffel Tower</h3>
+                <p>The iconic symbol of Paris, offering stunning views of the city from its observation decks.</p>
+            </div>
+            <div>
+                <h3>Louvre Museum</h3>
+                <p>Home to thousands of art pieces, including the famous "Mona Lisa" and "Venus de Milo".</p>
+            </div>
+            <div>
+                <h3>Notre-Dame Cathedral</h3>
+                <p>A masterpiece of French Gothic architecture, famous for its stunning facade and flying buttresses.</p>
+            </div>
+            <div>
+                <h3>Montmartre</h3>
+                <p>The historic hilltop neighborhood known for its art, the Sacré-Cœur Basilica, and stunning views of Paris.</p>
+            </div>
+            <div>
+                <h3>Champs-Élysées</h3>
+                <p>The grand avenue, lined with shops, theaters, and cafes, leading to the Arc de Triomphe.</p>
+            </div>
+            <div>
+                <h3>Musée d'Orsay</h3>
+                <p>A museum housed in a former railway station, featuring art from the Impressionist period and beyond.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

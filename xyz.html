@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore top European destinations with Travelgram. Discover the best travel spots and plan your next trip to Europe.">
+    <title>Travelgram</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav {
+            background-color: #0d69d8;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        header {
+            background-color: #1b407f;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 2em;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        .destination {
+            margin: 20px 0;
+            border-radius: 10px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .destination:hover {
+            transform: scale(1.02);
+        }
+
+        .destination video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .destination h3 {
+            margin: 10px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .destination p {
+            margin: 0;
+            padding: 10px;
+            background-color: #e0e0e0;
+            color: black;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        form label {
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            padding: 12px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 12px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #444;
+        }
+
+        /* Dark Mode Styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        nav.dark-mode {
+            background-color: #1f1f1f;
+        }
+
+        .destination.dark-mode {
+            background-color: #333;
+        }
+
+        .destination.dark-mode h3 {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .destination.dark-mode p {
+            background-color: #444;
+            color: #ccc;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block;
+                margin: 5px 0;
+            }
+
+            section {
+                margin: 10px;
+                padding: 10px;
+            }
+
+            .destination h3, .destination p {
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <h1>Welcome to Travelgram</h1>
+        <p>Explore top European destinations and plan your stay.</p>
+        <button id="darkModeToggle">Switch to Dark Mode</button>
+    </header>
+
+    <section id="destinations">
+       <a href="paris.html"><h2>Top European Destinations</h2>
+        <div class="destination">
+            <video src="VidParis.mp4" autoplay loop muted loading="lazy" aria-label="Paris skyline"></video>
+            <h3>Paris, France</h3>
+            <p>Average Hotel Cost: €200/night. Overall Expense: €300/day.</p>
+        </div></a> 
+        
+        <a href="rome.html"><div class="destination">
+            <video src="VidRome.mp4" autoplay loop muted loading="lazy" aria-label="Rome city view"></video>
+            <h3>Rome, Italy</h3>
+            <p>Average Hotel Cost: €150/night. Overall Expense: €250/day.</p>
+        </div></a>
+        <a href=""><div class="destination">
+            <video src="VidBerlin (1).mp4" autoplay loop muted loading="lazy" aria-label="Berlin cityscape"></video>
+            <h3>Berlin, Germany</h3>
+            <p>Average Hotel Cost: €120/night. Overall Expense: €200/day.</p>
+        </div></a>
+        <a href="london.html"><div class="destination">
+            <video src="VidLondon.mp4" autoplay loop muted loading="lazy" aria-label="London skyline"></video>
+            <h3>London, UK</h3>
+            <p>Average Hotel Cost: £180/night. Overall Expense: £280/day.</p>
+        </div></a>
+        <a href="Amsterdam.html"><div class="destination">
+            <video src="VidAmsterdam.mp4" autoplay loop muted loading="lazy" aria-label="Amsterdam canal view"></video>
+            <h3>Amsterdam, Netherlands</h3>
+            <p>Average Hotel Cost: €170/night. Overall Expense: €270/day.</p>
+        </div></a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <p>Email: info@travelgram.com</p>
+    </section>
+
+    <button onclick="scrollToTop()" id="scrollBtn" style="display:none;">Top</button>
+
+    <script>
+        // Scroll to top button
+        window.onscroll = function() {
+            const btn = document.getElementById('scrollBtn');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        // Dark mode toggle functionality
+        const darkModeButton = document.getElementById('darkModeToggle');
+        darkModeButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            if (document.body.classList.contains('dark-mode')) {
+                darkModeButton.innerText = 'Switch to Light Mode';
+            } else {
+                darkModeButton.innerText = 'Switch to Dark Mode';
+            }
+        });
+    </script>
+</body>
+</html>

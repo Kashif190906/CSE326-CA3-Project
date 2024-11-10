@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Travelgram</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        nav {
+            background-color: #004d00; /* Dark green */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00; /* Gold */
+        }
+
+        header {
+            background-color: #006400; /* Dark green */
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 2em;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1200px; /* Centered layout */
+        }
+
+        .destination {
+            margin: 20px 0;
+            border-radius: 10px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .destination video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .destination h3 {
+            margin: 10px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border-radius: 0 0 10px 10px; /* Rounded corners for the heading */
+        }
+
+        .destination p {
+            margin: 0;
+            padding: 10px;
+            background-color: #e0e0e0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Top Travel Destinations</h1>
+        <p>Explore these amazing places to travel around the world!</p>
+    </header>
+    <section id="destinations">
+        <h2>10 Must-Visit Destinations</h2>
+        <div class="destination">
+            <video src="paris.mp4" autoplay loop muted></video>
+            <h3>Paris, France</h3>
+            <p>Known as the City of Light, Paris is famous for its art, fashion, and culture.</p>
+        </div>
+        <div class="destination">
+            <video src="rome.mp4" autoplay loop muted></video>
+            <h3>Rome, Italy</h3>
+            <p>The Eternal City offers a rich history, stunning architecture, and delicious cuisine.</p>
+        </div>
+        <div class="destination">
+            <video src="berlin.mp4" autoplay loop muted></video>
+            <h3>Berlin, Germany</h3>
+            <p>A vibrant city known for its history, nightlife, and modern architecture.</p>
+        </div>
+        <div class="destination">
+            <video src="london.mp4" autoplay loop muted></video>
+            <h3>London, UK</h3>
+            <p>A cosmopolitan city that blends history with contemporary culture and fashion.</p>
+        </div>
+        <div class="destination">
+            <video src="amsterdam.mp4" autoplay loop muted></video>
+            <h3>Amsterdam, Netherlands</h3>
+            <p>Famous for its canals, art museums, and vibrant nightlife.</p>
+        </div>
+        <div class="destination">
+            <video src="barcelona.mp4" autoplay loop muted></video>
+            <h3>Barcelona, Spain</h3>
+            <p>Renowned for its architecture, beaches, and unique culture.</p>
+        </div>
+        <div class="destination">
+            <video src="newyork.mp4" autoplay loop muted></video>
+            <h3>New York City, USA</h3>
+            <p>The Big Apple is famous for its iconic skyline, theaters, and diverse neighborhoods.</p>
+        </div>
+        <div class="destination">
+            <video src="tokyo.mp4" autoplay loop muted></video>
+            <h3>Tokyo, Japan</h3>
+            <p>A bustling metropolis that blends traditional culture with cutting-edge technology.</p>
+        </div>
+        <div class="destination">
+            <video src="sydney.mp4" autoplay loop muted></video>
+            <h3>Sydney, Australia</h3>
+            <p>Famous for its Sydney Opera House and beautiful harbor beaches.</p>
+        </div>
+        <div class="destination">
+            <video src="cape_town.mp4" autoplay loop muted></video>
+            <h3>Cape Town, South Africa</h3>
+            <p>Known for its stunning landscapes, beaches, and Table Mountain.</p>
+        </div>
+    </section>
+</body>
+</html>

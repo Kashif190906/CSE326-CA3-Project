@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore London with Travelgram. Find the best hotels, flight prices from New Delhi to London, and top tourist destinations in London.">
+    <title>Travelgram - London Travel Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #1b407f;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2em;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .prices, .places {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .prices div, .places div {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            text-align: center;
+        }
+
+        .prices div h3, .places div h3 {
+            margin-bottom: 10px;
+            color: #1b407f;
+        }
+
+        .prices div p, .places div p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        /* Flight Prices Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th, table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #1b407f;
+            color: white;
+        }
+
+        table td {
+            background-color: #f9f9f9;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .prices div, .places div {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travelgram - Your Guide to London</h1>
+        <p>Find the best hotels, flight prices, and explore the famous places in London!</p>
+    </header>
+
+    <section>
+        <h2>Hotel Room Prices in London</h2>
+        <img src="89019-night-capital_city-metropolis-tourist_attraction-landmark-1920x1080.jpg" width="800" height="500"
+        <div class="prices">
+            <div>
+                <h3>Luxury Hotels</h3>
+                <p>£250 - £500 per night</p>
+            </div>
+            <div>
+                <h3>Mid-Range Hotels</h3>
+                <p>£120 - £250 per night</p>
+            </div>
+            <div>
+                <h3>Budget Hotels</h3>
+                <p>£60 - £120 per night</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Flight Prices: New Delhi to London</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Airline</th>
+                    <th>Departure</th>
+                    <th>Arrival</th>
+                    <th>Price (Round Trip)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>British Airways</td>
+                    <td>New Delhi, 11:50 PM</td>
+                    <td>London, 6:00 AM</td>
+                    <td>£500</td>
+                </tr>
+                <tr>
+                    <td>Air India</td>
+                    <td>New Delhi, 2:10 AM</td>
+                    <td>London, 9:00 AM</td>
+                    <td>£550</td>
+                </tr>
+                <tr>
+                    <td>Qatar Airways</td>
+                    <td>New Delhi, 5:00 AM</td>
+                    <td>London, 11:30 AM</td>
+                    <td>£600</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Famous Places to Visit in London</h2>
+        <div class="places">
+            <div>
+                <h3>The British Museum</h3>
+                <p>One of the world’s greatest museums, home to millions of years of history and culture.</p>
+            </div>
+            <div>
+                <h3>The Tower of London</h3>
+                <p>A historic castle that has served as a royal palace, prison, and home to the Crown Jewels.</p>
+            </div>
+            <div>
+                <h3>Big Ben & Houses of Parliament</h3>
+                <p>The iconic clock tower and the seat of the UK government, an absolute must-see landmark in London.</p>
+            </div>
+            <div>
+                <h3>The London Eye</h3>
+                <p>Europe's tallest observation wheel, offering stunning views of London’s skyline.</p>
+            </div>
+            <div>
+                <h3>Hyde Park</h3>
+                <p>A massive green space offering peaceful nature, lakes, and historical monuments in central London.</p>
+            </div>
+            <div>
+                <h3>St. Paul's Cathedral</h3>
+                <p>One of London's most famous churches, renowned for its magnificent dome and stunning interior.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
